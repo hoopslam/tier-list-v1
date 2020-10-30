@@ -1,4 +1,5 @@
 const rows = document.querySelectorAll(".row");
+const colors = ['green', 'yellowgreen', 'yellow', 'orange', 'orangered', 'red']
 
 const onDragOver = (event) => {
   event.preventDefault();
@@ -12,7 +13,9 @@ const onDrop = (event) => {
   event.target.appendChild(draggedCard);
 }
 
-rows.forEach((row) => {
+rows.forEach((row, index) => {
+  const label = row.querySelector('.label');
+  label.style.backgroundColor = colors[index];
   row.ondragover = onDragOver;
   row.ondrop = onDrop;
 })
