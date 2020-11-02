@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="cards.js" defer></script>
-    <script src="rows.js" defer></script>
     <title>Tier List v1</title>
   </head>
   <body>
@@ -13,9 +11,6 @@
     <div id="board">
       <div class="row">
         <div class="label">S</div>
-        <div class="card" id="1" draggable="true">David</div>
-        <div class="card" id="2" draggable="true">Jisun</div>
-        <div class="card" id="3" draggable="true">Miru</div>
       </div>
       <div class="row">
         <div class="label">A</div>
@@ -33,5 +28,20 @@
         <div class="label">F</div>
       </div>
     </div>
+    <div class="cardBank" id="cardBank">
+      <button id="addCard">+</button>
+    </div>
+    <div class="instructions">
+      <p></p>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        placeholder="Enter Subject"
+      />
+    </div>
+    <script src="cards.js"></script>
+    <script src="rows.js"></script>
+    <script src="bank.js"></script>
   </body>
 </html>
