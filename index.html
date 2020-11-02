@@ -7,7 +7,7 @@
     <title>Tier List v1</title>
   </head>
   <body>
-    <h1>Tier List</h1>
+    <h1 id="title">Tier List</h1>
     <div id="board">
       <div class="row">
         <div class="label">S</div>
@@ -32,13 +32,27 @@
       <button id="addCard">+</button>
     </div>
     <div class="instructions">
-      <p></p>
-      <input
-        type="text"
-        name="subject"
-        id="subject"
-        placeholder="Enter Subject"
-      />
+      <div>
+        <h2>Add New Card</h2>
+        <p>
+          Press the + button in the card bank to add a new card. You will be
+          prompted to select an image for the card.
+        </p>
+      </div>
+      <div>
+        <h2>Delete Card</h2>
+        <p>Double click on any existing card to delete it.</p>
+      </div>
+      <div>
+        <h2>Change Title</h2>
+        <label for="subject">Enter your new title here:</label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Tier List Title"
+        />
+      </div>
     </div>
     <script src="cards.js"></script>
     <script src="rows.js"></script>

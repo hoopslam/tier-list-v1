@@ -32,10 +32,16 @@ body {
 }
 
 .instructions {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 80vw;
+  font-size: 15px;
+  color: #888;
+  margin-top: 0px;
+}
+
+.instructions h2 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: white;
 }
 
 .row {

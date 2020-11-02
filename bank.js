@@ -1,4 +1,5 @@
 const bank = document.querySelector('#cardBank');
+const title = document.querySelector("#subject");
 
 const onDropCard = (event) => {
   const id = event.dataTransfer.getData('id');
@@ -7,3 +8,8 @@ const onDropCard = (event) => {
 
 bank.ondrop = onDropCard;
 bank.ondragover = (event) => event.preventDefault();
+
+title.onchange = (event) => {
+  const newTitle = document.getElementById("title");
+  newTitle.innerHTML = event.target.value;
+}
