@@ -59,6 +59,8 @@ body {
   height: 90px;
   width: 90px;
   background-color: green;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .card {
